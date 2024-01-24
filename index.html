@@ -12,29 +12,21 @@
     <title>AMZ | Home</title>
 </head>
 <body>
-    
+
     <header class="w-100 position-absolute">
-    
-        <nav class="container-fluid">
-            <div class="row">
-                <div class="container">
+        <nav>
+           <div class="top-nav bg-red">
+            <div class="container">
+                <div class="row align-items-center">
                     <div class="d-flex align-items-center justify-content-between">
                         <a href="index.html" class="logo">
                             <img src="images/logo.png" alt="logo">
                         </a>
-                        <div class="ms-auto d-lg-none search-and-icons me-2">
-                            <a href="#">
-                                <img src="images/cart-icon-mobile.png" alt="cart">
-                            </a>
-                            <a href="#">
-                                <img src="images/profile-icon-mobile.png" alt="profile">
-                            </a>
-                        </div>
                         <input type="checkbox" id="click">
                         <label for="click" class="menu-btn d-lg-none">
                             <span><i class="fa-solid fa-bars"></i></span>
                         </label>
-    
+            
                         <ul class="nav-links align-items-center">
                             <li class="active"><a class="nav-link " href="index.html">Home</a></li>
                             <li><a class="nav-link" href="categories.html">Categories</a></li>
@@ -45,42 +37,201 @@
                         </ul>
                         <div class="ms-auto search-and-icons d-none d-lg-block">
                             <div class="d-flex align-items-center">
-                                <div class="search-container">
-                                    <form action="#">
-                                        <input type="search" placeholder="Search">
-                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                    </form>
+                                <div class="lang-button-container d-flex align-items-center pe-2">
+                                    <img class="me-1" src="images/lang-icon.png" alt="language">
+                                    <a href="#" class="language-button">English</a>
                                 </div>
-                                <div class="d-flex align-items-center ms-3">
-                                    <a href="account-orders.html">
-                                        <img src="images/profile-icon.png" alt="profile">
-                                    </a>
-                                    <div class="shopping-cart position-relative">
-                                        <a href="shopping-card.html">
-                                            <img src="images/cart-icon.png" alt="cart">
-                                        </a>
-                                        <span
-                                            class="cart-items-num position-absolute bottom-0 translate-middle badge rounded-pill bg-danger">3</span>
+                                <div class="social">
+                                    <a href="#"><img src="images/insta-icon.png" alt="instagram-icon"></a>
+                                    <a href="#"><img src="images/facebook-icon.png" alt="instagram-icon"></a>
+                                    <a href="#"><img src="images/whatsapp-icon.png" alt="whatsapp-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           </div>
+           <div class="white-bg">
+            <div class="container">
+                <div class="second-nav d-flex justify-content-between">
+                    <div class="d-none d-lg-block">
+                        <div class="d-flex align-items-center">
+                            <button class="btn categories fw-600" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                                aria-controls="offcanvas">
+                                <img class="cat-toggle-icon me-2" src="images/cat-toggle-icon.png" alt="toggle-icon">
+                                Categories
+                            </button>
+                        </div>
+                        <div class="categories-side-content">
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h2 class="offcanvas-title fw-700" id="offcanvasLabel">Categories</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="d-block">
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Adhesive</a></li>
+                                        <li><a href="#">Blower</a></li>
+                                        <li><a href="#">Cable Reel and Extension</a></li>
+                                        <li><a href="#">Cordless Tools</a></li>
+                                        <li><a href="#">Dust Remover</a></li>
+                                        <li><a href="#">Hand Tools</a></li>
+                                        <li><a href="#">Measuring Tools</a></li>
+                                        <li><a href="#">Tools Box</a></li>
+                                        <li><a href="#">Tools Set</a></li>
+                                        <li><a href="#">Washing Mashine</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                        aria-controls="offcanvasExample">
+                                        Link with href
+                                    </a> -->
+                
+                    </div>
+                    <div class="search-container">
+                        <form action="#">
+                            <input type="search" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="d-flex align-items-center side-icons">
+                        <a href="#"></a>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2"
+                            aria-controls="offcanvas2">
+                            <img class="cart-icon" src="images/cart-icon.png" alt="cart-icon">
+                        </button>
+                
+                        <div class="cart-container">
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title fw-700" id="offcanvas2Label">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="cart-items">
+                                        <div class="item-container d-flex align-items-center">
+                                            <div class="img-container"><img src="images/cart-product-img.png" alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic fw-500">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+                                        <div class="item-container d-flex align-items-center">
+                                            <div class="img-container"><img src="images/cart-product-img.png" alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic fw-500">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+                                        <div class="item-container d-flex align-items-center">
+                                            <div class="img-container"><img src="images/cart-product-img.png" alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic fw-500">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
+                                        <div class="item-container d-flex align-items-center">
+                                            <div class="img-container"><img src="images/cart-product-img.png" alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic fw-500">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href="#"><img id="account-dropdown" src="images/account-icon.png" alt="account-icon"></a>
+                            <div class="menu">
+                                <ul class="d-block">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+           </div>
     
         </nav>
         <div class="overlay"></div>
     </header>
 
     <main class="home">
-        
+        <section class="sec-padding">
+            <div class="hero-sec-slider top-sec-m">
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-1.png" alt="">
+                    <div class="content">
+                        <h2>Free Shipping</h2>
+                        <p>on fulfilled by Chehab orders</p>
+                        <a href="#" class="main-btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-2.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-3.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-1.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-2.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="images/hero-sec-slide-3.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="vendor/slick-carousel/js/slick.min.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // delete-btn
+            $('.delete-btn').on('click', function () {
+                // Find the parent row and remove it
+                $(this).closest('.cart-items .item-container').remove();
+            });
+
+            $('.hero-sec-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true
+            });
+            
+        });
+    </script>
 
 </body>
 </html>

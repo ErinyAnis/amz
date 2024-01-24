@@ -15,10 +15,10 @@ $(document).ready(function () {
   });
   $("#click").change(function () {
     if ($(this).is(":checked")) {
-      $("nav ul").css("left", "0");
+      $("nav ul").css("top", "100%");
     } else {
       // If you want to reset the style when unchecked
-      $("nav ul").css("left", "-100%"); // Reset to default value or any other value you want
+      $("nav ul").css("top", "665%"); // Reset to default value or any other value you want
     }
   });
 
@@ -29,6 +29,16 @@ $(document).ready(function () {
   $("body").on("click", ".overlay.display", function () {
     $("#click").click();
     $(".fa-bars").removeClass("fa-xmark");
+  });
+
+  // account-menu
+  $("#account-dropdown").click(function () {
+    $(".menu").toggle();
+  });
+  $(document).on("click", function (event) {
+    if (!$(event.target).closest(".icon-container").length) {
+      $(".icon-container .menu").hide();
+    }
   });
   // end-navbar
 
