@@ -696,6 +696,10 @@ header nav .icon-container .menu li:hover {
   margin-left: 5px;
 }
 
+.home .new-arrivals .title a {
+  font-size: 18px;
+}
+
 .home .new-arrivals .title a:hover {
   color: var(--red);
 }
