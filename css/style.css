@@ -86,7 +86,7 @@ a:hover {
   color: var(--white);
   border: 1px solid var(--red);
   border-radius: 5px;
-  padding: 7px 25px;
+  padding: 8px 25px;
   transition: var(--transition);
   font-size: 18px;
 }
@@ -102,7 +102,7 @@ a:hover {
   color: var(--red);
   font-size: 18px;
   transition: var(--transition);
-  padding: 7px 25px;
+  padding: 8px 25px;
   border-radius: 5px;
   background-color: var(--white);
 } 
@@ -181,8 +181,8 @@ a:hover {
 @media (max-width: 992px) {
   .main-btn,
   .secondary-btn {
-    font-size: 14px;
-    padding: 8px 18px;
+    font-size: 16px;
+    padding: 8px 20px;
   }
 
   /* .sec-padding {
@@ -417,6 +417,34 @@ header nav .cart-container .total div {
   font-size: 18px;
 }
 
+header nav .cart-container .cart-items {
+  max-height: 360px;
+    overflow: auto;
+}
+
+/* scrollbar */
+header nav ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+header nav ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+header nav ::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+header nav ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /* account-menu */
 header nav .icon-container {
   position: relative;
@@ -631,46 +659,54 @@ header nav .icon-container .menu li:hover {
 
 .home .hero-sec-slider .slick-slide img {
   width: 100%;
-  max-height: 100vh;
-    object-fit: cover;
+  min-height: 80vh;
+  object-fit: cover;
 }
 
 /* slide-content */
 .home .hero-sec-slider .content {
   color: var(--white);
     position: absolute;
-    bottom: 15%;
-    left: 9%;
-    transform: translate(7%, 7%);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    transition: var(--transition);
+    transition: opacity var(--transition);
+    opacity: 0;
+    width: 100%;
 }
-
 
 .home .hero-sec-slider .content h2 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .home .hero-sec-slider .content p {
     font-weight: 500;
-    font-size: 28px;
-    padding: 0 3%;
+    font-size: 26px;
+    padding: 0 21%;
 }
 
-.home .hero-sec-slider .slick-active + .slick-active:nth-child(1) .content {
-      opacity: 1;
+.home .hero-sec-slider .slick-current+.slick-active .content {
+  opacity: 1 !important;
 }
 
 @media (max-width: 992px) {
   .home .hero-sec-slider .content {
-      top: 20%;
+    display: none;
+    opacity: 0;
+  }
+  .home .hero-sec-slider .slick-current .content {
+      opacity: 1;
+      top: 15%;
+      left: 0;
       text-align: left;
+      transform: translate(7%, 15%);
+      display: block;
   }
 
   .home .hero-sec-slider .slick-slide img {
     max-height: 60vh;
-    object-fit: cover;
   }
 
   .home .hero-sec-slider .content h2 {
@@ -678,6 +714,8 @@ header nav .icon-container .menu li:hover {
   }
   .home .hero-sec-slider .content p {
     font-size: 20px;
+    padding: 0;
+    margin-bottom: 35px;
   }
   .home .hero-sec-slider .slick-dots li button:before {
     font-size: 10px;
@@ -685,6 +723,7 @@ header nav .icon-container .menu li:hover {
   .home .hero-sec-slider .slick-dots li {
     margin: 0 3px;
   }
+
 }
 
 /* new-arrivals-sec */

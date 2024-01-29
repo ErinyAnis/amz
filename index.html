@@ -12,7 +12,6 @@
     <title>AMZ | Home</title>
 </head>
 <body>
-
     <header class="w-100 position-absolute">
         <nav>
            <div class="top-nav bg-red">
@@ -109,7 +108,7 @@
                         <div class="cart-container">
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvas2Label">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title fw-700" id="offcanvas2Label">Offcanvas</h5>
+                                    <h5 class="offcanvas-title fw-700" id="offcanvas2Label">My Cart</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
@@ -191,7 +190,6 @@
     </header>
 
     <main class="home">
-
         <!--hero slider -->
         <section class="sec-padding">
             <div class="hero-sec-slider top-sec-m">
@@ -248,7 +246,7 @@
 
         <section class="new-arrivals sec-padding">
             <div class="container">
-                <div class="title d-flex align-items-center justify-content-between">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
                     <h3 class="red fw-700">New Arrivals</h3>
                     <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
@@ -288,13 +286,12 @@
                         breakpoint: 993,
                         settings: {
                             slidesToShow: 1,
-                            arrows: false
+                            arrows: false,
+                            draggable: true
                         }
                     },
                 ]
             });
-            
-
         
             
         });
