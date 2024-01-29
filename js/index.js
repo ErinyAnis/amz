@@ -15,7 +15,7 @@ $(document).ready(function () {
   });
   $("#click").change(function () {
     if ($(this).is(":checked")) {
-      $("nav ul").css("top", "100%");
+      $("nav ul").css("top", "400%");
     } else {
       // If you want to reset the style when unchecked
       $("nav ul").css("top", "665%"); // Reset to default value or any other value you want
