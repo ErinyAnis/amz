@@ -86,10 +86,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                        aria-controls="offcanvasExample">
-                                        Link with href
-                                    </a> -->
                 
                     </div>
                     <div class="search-container">
@@ -100,9 +96,10 @@
                     </div>
                     <div class="d-flex align-items-center side-icons">
                         <a href="#"></a>
-                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2"
+                        <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas2"
                             aria-controls="offcanvas2">
                             <img class="cart-icon" src="images/cart-icon.png" alt="cart-icon">
+                            <span class="cart-items-num position-absolute translate-middle badge rounded-pill bg-danger">3</span>
                         </button>
                 
                         <div class="cart-container">
@@ -172,7 +169,7 @@
                             </div>
                         </div>
                         <div class="icon-container">
-                            <a href="#"><img id="account-dropdown" src="images/account-icon.png" alt="account-icon"></a>
+                            <a href="#!"><img id="account-dropdown" src="images/account-icon.png" alt="account-icon"></a>
                             <div class="menu">
                                 <ul class="d-block">
                                     <li><a href="#">Login</a></li>
@@ -191,7 +188,7 @@
 
     <main class="home">
         <!--hero slider -->
-        <section class="sec-padding">
+        <section class="sec-padding pb-0">
             <div class="hero-sec-slider top-sec-m">
                 <div class="slider-item">
                     <img src="images/hero-slider/hero-slider-img6.png" alt="">
@@ -244,6 +241,7 @@
             </div>
         </section>
 
+        <!-- new-arrivals -->
         <section class="new-arrivals sec-padding">
             <div class="container">
                 <div class="title d-flex align-items-center justify-content-between mb-4">
@@ -251,17 +249,873 @@
                     <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="row products">
-                    <div class="col-lg-4">
+                    <div class="col-6 col-lg-3">
                         <div class="product-card">
-                            <figure>
-                                <img src="" alt="">
-                            </figure>
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- banners -->
+        <section class="banners sec-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="images/banner-1.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="images/banner-2.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#">
+                            <img src="images/banner-1.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- categories -->
+        <section class="categories sec-padding">
+            <div class="container">
+                <div class="title mb-4">
+                    <h3 class="fw-700 red">Categories</h3>
+                </div>
+                <div class="categories-slider">
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-1.png" alt="category-1">
+                            <h4 class="fw-700">Accessories</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-2.png" alt="category-1">
+                            <h4 class="fw-700">Adhesive</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-3.png" alt="category-1">
+                            <h4 class="fw-700">Blower</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-4.png" alt="category-1">
+                            <h4 class="fw-700">Cable Reel and Extension</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-5.png" alt="category-1">
+                            <h4 class="fw-700">Cordless Tools</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-3.png" alt="category-1">
+                            <h4 class="fw-700">Adhesive</h4>
+                        </a>
+                    </div>
+                    <div class="category-item">
+                        <a href="#">
+                            <img src="images/cat-4.png" alt="category-1">
+                            <h4 class="fw-700">Blower</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- best-selling-products -->
+        <section class="new-arrivals sec-padding">
+            <div class="container">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="red fw-700">Best Selling Products</h3>
+                    <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row products">
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section class="sec-padding">
+            <div class="container">
+                <a href="#">
+                    <img src="images/banner-3.png" alt="product-tiltle">
+                </a>
+            </div>
+        </section>
+
+        <!-- popular products -->
+        <section class="new-arrivals sec-padding">
+            <div class="container">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="red fw-700">Popular Products</h3>
+                    <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row products">
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section class="sec-padding">
+            <div class="container">
+                <a href="#">
+                    <img src="images/banner-3.png" alt="product-tiltle">
+                </a>
+            </div>
+        </section>
+
+        <!-- Recently Visited Products -->
+        <section class="new-arrivals sec-padding">
+            <div class="container">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="red fw-700">Recently Visited Products</h3>
+                    <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row products">
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Less Than 100 EGP -->
+        <section class="new-arrivals sec-padding">
+            <div class="container">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="red fw-700">Products Less Than 100 EGP</h3>
+                    <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row products">
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">
+                                <div class="hide">Add To Cart <img src="images/add-to-cart-icon.png" alt="cart-icon"></div>
+                                <div class="hide-counter">
+                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter d-flex align-items-center gap-1">
+                                            <span data-stock="5" data-min="1">1</span>
+                                            <div>Item</div>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe form -->
+        <section class="section sec-padding">
+            <div class="container">
+                <div class="form-container text-center">
+                    <h5 class="mb-4 white fw-700">Subscribe to our newsletter</h5>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-lg-3">
+                            <input type="text" name="name" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-lg-3">
+                            <input type="email" name="email" class="form-control" placeholder="Email address">
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="submit" class="btn subscribe-btn mb-3">Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-3 text-center text-md-start">
+                    <a href="index.html"><img class="logo" src="images/footer-logo.png" alt="AMZ"></a>
+                    <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                </div>
+                <div class="col-md-9 mt-3 mt-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Company</div>
+                            <div><a href="index.html">Home</a></div>
+                            <div><a href="categories.html">Categories</a></div>
+                            <div><a href="about.html">About</a></div>
+                            <div><a href="contact.html">Contact</a></div>
+                            <div><a href="Brands.html">Brands</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Important Links</div>
+                            <div><a href="#">Important Links</a></div>
+                            <div><a href="#">Store Location</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Customer Service</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="categories.html">Brands</a></div>
+                            <div><a href="about.html">Contacts</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">User Area</div>
+                            <div><a href="index.html">Login</a></div>
+                            <div><a href="categories.html">Register</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex align-items-center justify-content-center gap-3 mb-3">
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="line mb-3"></div>
+            <div class="copy-right">
+                <div class="text-center">
+                    Copyright © 2023 AMZ Tools Egypt, Developed By <a href="www.innovationscope.com">Innovation
+                        Scope</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
@@ -292,7 +1146,48 @@
                     },
                 ]
             });
-        
+
+             // When the button is clicked
+            $(".hide").click(function () {
+                // Replace the button content
+                $(this).addClass('hide-prev');
+                $(this).next(".hide-counter").addClass("visible");
+            });
+
+            // counter
+            $('.decrement').on('click', function () {
+                var qty = $(this).next('.counter').children('span').text();
+                var min = $(this).next('.counter').children('span').data('min');
+                if (Number(qty) > min) { $(this).next('.counter').children('span').text(Number(qty) - 1); } else { alert('this is minimum quantity you can add') }
+            });
+
+            $('.increment').on('click', function () {
+                var qty = $(this).prev('.counter').children('span').text();
+                var min = $(this).prev('.counter').children('span').data('min');
+                var max = $(this).prev('.counter').children('span').data('stock');
+                if (Number(qty) < max) { $(this).prev('.counter').children('span').text(Number(qty) + 1); } else { alert('this is maximum quantity you can add') }
+            });
+
+
+            $('.categories-slider').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: false,
+                responsive: [
+                    
+                    {
+                        breakpoint: 993,
+                        settings: {
+                            slidesToShow: 2.5,
+                            infinite: false,
+                            arrows: false,
+                            draggable: true
+                        }
+                    },
+                ]
+            });
+
             
         });
     </script>
