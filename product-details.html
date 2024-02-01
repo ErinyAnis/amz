@@ -27,8 +27,8 @@
                         </label>
 
                         <ul class="nav-links align-items-center">
-                            <li class="active"><a class="nav-link " href="index.html">Home</a></li>
-                            <li><a class="nav-link" href="categories.html">Categories</a></li>
+                            <li><a class="nav-link " href="index.html">Home</a></li>
+                            <li class="active"><a class="nav-link" href="categories.html">Categories</a></li>
                             <li><a class="nav-link" href="our-clients.html">Brands</a></li>
                             <li><a class="nav-link" href="about.html">About</a></li>
                             <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -223,11 +223,11 @@
     </nav>
     <div class="overlay"></div>
 </header>
-<h1 class="d-none"></h1>
 
     <main class="product-details">
          <section class="sec-padding">
             <div class="container top-sec-m">
+                <!-- breadcrumb -->
                 <nav class="pt-5" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -236,9 +236,11 @@
                     </ol>
                 </nav>
                 <div class="row mt-5">
+                    <!-- product-slider -->
                     <div class="col-lg-6">
                         
                     </div>
+                    <!-- product-side-info -->
                     <div class="col-lg-6">
                         <div class="details">
                             <img src="images/brand-img.png" alt="brand-name">
@@ -288,13 +290,13 @@
                                     <div class="counter-container">
                                         <div class="counter-btn secondary-btn align-items-center" id="counterBtn">
                                             <div class="icon-btn decrement">
-                                                <button>-</button>
+                                                <span>-</span>
                                             </div>
                                             <div class="num counter">
                                                 <span data-stock="5" data-min="1">0</span>
                                             </div>
                                             <div class="icon-btn increment">
-                                                <button>+</button>
+                                                <span>+</span>
                                             </div>
                                         </div>
                                     </div>
@@ -321,6 +323,7 @@
 
                 <div class="nav-container sec-padding">
                     <div class="container">
+                        <!-- nav-tabs -->
                         <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
@@ -332,6 +335,7 @@
                             </li>
                         </ul>
                         <div class="tab-content mt-4" id="myTabContent">
+                            <!-- details -->
                             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                                 tabindex="0">
                                 <div class="content-holder">
@@ -345,6 +349,7 @@
                                     </ul>
                                 </div>
                             </div>
+                            <!-- description -->
                             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                                 <div class="content-holder p-5">
                                     <table class="table table-striped">
@@ -389,10 +394,12 @@
             </div>
          </section>
 
+         <!-- reviews -->
         <section class="sec-padding">
             <div class="container">
                 <div class="reviews-container">
                     <div class="row">
+                        <!-- add-review -->
                         <div class="col-lg-6">
                             <!-- modal -->
                             <div class="modal-content text-center">
@@ -428,9 +435,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- customers reviews -->
                         <div class="col-lg-6">
                             <div class="reviews">
-                                <h2>Customers Reviews</h2>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <h2 class="fw-700 red mb-0">Customers Reviews</h2> 
+                                    <span class="badge rounded-pill">157</span>
+                                </div>
                                 <div class="review-container">
                                     <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just
                                         choose the
@@ -453,9 +464,163 @@
                 </div>
             </div>
         </section>
+
+        <!-- Similar Products -->
+        <section class="main-card sec-padding">
+            <div class="container">
+                <div class="title d-flex align-items-center justify-content-between mb-4">
+                    <h3 class="red fw-700">Similar Products</h3>
+                    <a href="#" class="fw-500">More Products<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row products">
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">Add To Cart<img src="images/add-to-cart-icon.webp"
+                                    alt="cart-icon"></button>
+                            <div class="counter-holder">
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <div class="icon-btn decrement">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="num counter d-flex align-items-center gap-1">
+                                        <span data-stock="5" data-min="1">1</span>
+                                        <div>Item</div>
+                                    </div>
+                                    <div class="icon-btn increment">
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">Add To Cart<img src="images/add-to-cart-icon.webp"
+                                    alt="cart-icon"></button>
+                            <div class="counter-holder">
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <div class="icon-btn decrement">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="num counter d-flex align-items-center gap-1">
+                                        <span data-stock="5" data-min="1">1</span>
+                                        <div>Item</div>
+                                    </div>
+                                    <div class="icon-btn increment">
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">Add To Cart<img src="images/add-to-cart-icon.webp"
+                                    alt="cart-icon"></button>
+                            <div class="counter-holder">
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <div class="icon-btn decrement">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="num counter d-flex align-items-center gap-1">
+                                        <span data-stock="5" data-min="1">1</span>
+                                        <div>Item</div>
+                                    </div>
+                                    <div class="icon-btn increment">
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="product-card">
+                            <a href="product-details.html">
+                                <figure>
+                                    <img src="images/product-1.png" alt="product-title">
+                                </figure>
+                                <h3 class="fw-700">HIGH PRESSURE WASHER 180
+                                    BAR 2800 WATT</h3>
+                                <div class="brand-name">Total / TGT11266</div>
+                                <div class="price red fw-700">8,900 EGP</div>
+                                <div class="availability green fw-600">In Stock</div>
+                            </a>
+                            <button class="add-to-cart-btn">Add To Cart<img src="images/add-to-cart-icon.webp"
+                                    alt="cart-icon"></button>
+                            <div class="counter-holder">
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <div class="icon-btn decrement">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="num counter d-flex align-items-center gap-1">
+                                        <span data-stock="5" data-min="1">1</span>
+                                        <div>Item</div>
+                                    </div>
+                                    <div class="icon-btn increment">
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe form -->
+        <section class="section sec-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="form-container text-center">
+                            <h5 class="mb-4 white fw-700">Subscribe to our newsletter</h5>
+                            <form class="row g-3 justify-content-center">
+                                <div class="col-lg-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Email address">
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="submit" class="btn subscribe-btn mb-3">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
 
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="incrementAlert" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -479,6 +644,7 @@
             </div>
         </div>
     </div>
+
 
     <footer>
         <div class="container">
@@ -571,23 +737,6 @@
                 }
             });
 
-
-            // product-details-modal
-            $("#openModalBtn").click(function () {
-                $("#modal").fadeIn();
-            });
-
-            // Close modal when the close button or outside the modal is clicked
-            $(".close, .modal").click(function () {
-                $("#modal").fadeOut();
-            });
-
-            // Prevent modal from closing when clicking inside the modal content
-            $(".modal-content").click(function (event) {
-                event.stopPropagation();
-            });
-            // end-modal
-
             // review-stars
             /* 1. Visualizing things on Hover - See next part for action on click */
             $("#stars li")
@@ -643,6 +792,13 @@
                 responseMessage(msg);
             });
             // end-review-stars
+
+            // When the button is clicked
+            $(".add-to-cart-btn").click(function () {
+                // Replace the button content
+                $(this).addClass('hide-prev');
+                $(this).next(".counter-holder").addClass("visible-counter");
+            });
         });
     </script>
 

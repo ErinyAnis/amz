@@ -18,7 +18,7 @@ $(document).ready(function () {
       $("nav ul").css("bottom", "0");
     } else {
       // If you want to reset the style when unchecked
-      $("nav ul").css("bottom", "-200%"); // Reset to default value or any other value you want
+      $("nav ul").css("bottom", "-150%"); // Reset to default value or any other value you want
     }
   });
 

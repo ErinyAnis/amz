@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.png">
+    <title>Sub-categories | AMZ </title>
+</head>
+
+<body>
+    <header class="w-100 position-absolute">
+        <nav>
+            <div class="top-nav bg-red">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="index.html" class="logo">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <input type="checkbox" id="click">
+                            <label for="click" class="menu-btn d-lg-none">
+                                <span><i class="fa-solid fa-bars"></i></span>
+                            </label>
+
+                            <ul class="nav-links align-items-center">
+                                <li><a class="nav-link " href="index.html">Home</a></li>
+                                <li class="active"><a class="nav-link" href="categories.html">Categories</a></li>
+                                <li><a class="nav-link" href="our-clients.html">Brands</a></li>
+                                <li><a class="nav-link" href="about.html">About</a></li>
+                                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
+                            </ul>
+                            <div class="search-and-icons d-none d-lg-block">
+                                <div class="d-flex align-items-center">
+                                    <div class="lang-button-container d-flex align-items-center pe-3">
+                                        <img class="me-1" src="images/lang-icon.png" alt="language">
+                                        <a href="#" class="language-button">English</a>
+                                    </div>
+                                    <div class="social d-flex gap-2">
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="white-bg">
+                <div class="container">
+                    <div class="second-nav d-flex justify-content-between">
+                        <div class="d-none d-lg-block">
+                            <div class="d-flex align-items-center">
+                                <button class="btn categories fw-600" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas" aria-controls="offcanvas">
+                                    <i class="fa-solid fa-bars me-2 cat-toggle-icon"></i>
+                                    Categories
+                                </button>
+                            </div>
+                            <div class="categories-side-content">
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas"
+                                    aria-labelledby="offcanvasLabel">
+                                    <div class="offcanvas-header">
+                                        <h2 class="offcanvas-title fw-700" id="offcanvasLabel">Categories</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="d-block">
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Adhesive</a></li>
+                                            <li><a href="#">Blower</a></li>
+                                            <li><a href="#">Cable Reel and Extension</a></li>
+                                            <li><a href="#">Cordless Tools</a></li>
+                                            <li><a href="#">Dust Remover</a></li>
+                                            <li><a href="#">Hand Tools</a></li>
+                                            <li><a href="#">Measuring Tools</a></li>
+                                            <li><a href="#">Tools Box</a></li>
+                                            <li><a href="#">Tools Set</a></li>
+                                            <li><a href="#">Washing Mashine</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="search-container">
+                            <form action="#">
+                                <input type="search" placeholder="Search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="d-flex align-items-center side-icons">
+                            <a href="#"></a>
+                            <button class="btn position-relative" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvas2" aria-controls="offcanvas2">
+                                <img class="cart-icon" src="images/cart-icon.webp" alt="cart-icon">
+                                <span
+                                    class="cart-items-num position-absolute translate-middle badge rounded-pill bg-danger">3</span>
+                            </button>
+
+                            <div class="cart-container">
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2"
+                                    aria-labelledby="offcanvas2Label">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title fw-700" id="offcanvas2Label">My Cart</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="cart-items mb-4">
+                                            <div class="item-container d-flex align-items-center">
+                                                <a href="product-details.html">
+                                                    <div class="img-container"><img src="images/cart-product-img.png"
+                                                            alt="product-title"></div>
+                                                </a>
+                                                <a href="product-details.html">
+                                                    <div class="title fw-500 ms-3">
+                                                        <div class="gray-high product-title"><span
+                                                                class="qty red d-inline">2X</span> High Pressure Washer
+                                                            180 BAR 2800 WATT</div>
+                                                        <div class="price basic fw-600">8900 EGP</div>
+                                                    </div>
+                                                </a>
+                                                <button class="delete-btn btn"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                            <div class="item-container d-flex align-items-center">
+                                                <a href="product-details.html">
+                                                    <div class="img-container"><img src="images/cart-product-img.png"
+                                                            alt="product-title"></div>
+                                                </a>
+                                                <a href="product-details.html">
+                                                    <div class="title fw-500 ms-3">
+                                                        <div class="gray-high product-title"><span
+                                                                class="qty red d-inline">2X</span> High Pressure Washer
+                                                            180 BAR 2800 WATT</div>
+                                                        <div class="price basic fw-600">8900 EGP</div>
+                                                    </div>
+                                                </a>
+                                                <button class="delete-btn btn"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                            <div class="item-container d-flex align-items-center">
+                                                <a href="product-details.html">
+                                                    <div class="img-container"><img src="images/cart-product-img.png"
+                                                            alt="product-title"></div>
+                                                </a>
+                                                <a href="product-details.html">
+                                                    <div class="title fw-500 ms-3">
+                                                        <div class="gray-high product-title"><span
+                                                                class="qty red d-inline">2X</span> High Pressure Washer
+                                                            180 BAR 2800 WATT</div>
+                                                        <div class="price basic fw-600">8900 EGP</div>
+                                                    </div>
+                                                </a>
+                                                <button class="delete-btn btn"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                            <div class="item-container d-flex align-items-center">
+                                                <a href="product-details.html">
+                                                    <div class="img-container"><img src="images/cart-product-img.png"
+                                                            alt="product-title"></div>
+                                                </a>
+                                                <a href="product-details.html">
+                                                    <div class="title fw-500 ms-3">
+                                                        <div class="gray-high product-title"><span
+                                                                class="qty red d-inline">2X</span> High Pressure Washer
+                                                            180 BAR 2800 WATT</div>
+                                                        <div class="price basic fw-600">8900 EGP</div>
+                                                    </div>
+                                                </a>
+                                                <button class="delete-btn btn"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </div>
+                                            <div class="item-container d-flex align-items-center">
+                                                <a href="product-details.html">
+                                                    <div class="img-container"><img src="images/cart-product-img.png"
+                                                            alt="product-title"></div>
+                                                </a>
+                                                <a href="product-details.html">
+                                                    <div class="title fw-500 ms-3">
+                                                        <div class="gray-high product-title"><span
+                                                                class="qty red d-inline">2X</span> High Pressure Washer
+                                                            180 BAR 2800 WATT</div>
+                                                        <div class="price basic fw-600">8900 EGP</div>
+                                                    </div>
+                                                </a>
+                                                <button class="delete-btn btn"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </div>
+
+                                        </div>
+                                        <hr>
+                                        <!-- total-num -->
+                                        <div class="total d-flex align-items-center justify-content-between">
+                                            <h3 class="gray-high fw-500">Total</h3>
+                                            <div class="fw-500">8900 EGP</div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center mt-5 gap-3">
+                                            <a href="#" class="secondary-btn">View Cart</a>
+                                            <a href="#" class="main-btn">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <a href="#!"><img id="account-dropdown" src="images/account-icon.webp"
+                                        alt="account-icon"></a>
+                                <div class="menu">
+                                    <ul class="d-block">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="overlay"></div>
+    </header>
+
+    <main>
+        <section class="sec-padding">
+            <div class="container top-sec-m">
+                <!-- breadcrumb -->
+                <nav class="pt-5" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="categories.html">Category</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tools Box</li>
+                    </ol>
+                </nav>
+                <!-- categories -->
+                <div class="sub-cat categories">
+                    <div class="title mb-4">
+                        <h3 class="fw-700 red">Tools Box</h3>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-2 g-lg-3 mt-4">
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-1.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Plastic</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-2.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Canvas Bag</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-1.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Plastic</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-2.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Plastic</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-1.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Plastic</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category-item">
+                                <a href="all-products.html">
+                                    <div class="d-flex align-items-center d-md-block">
+                                        <div class="img-holder">
+                                            <img src="images/sub-cat-2.png" alt="category-title">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-700">Plastic</h4>
+                                            <div class="products-num fw-500 ">10 Products</div>
+                                            <button class="main-btn mt-3">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe form -->
+        <section class="section sec-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="form-container text-center">
+                            <h5 class="mb-4 white fw-700">Subscribe to our newsletter</h5>
+                            <form class="row g-3 justify-content-center">
+                                <div class="col-lg-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Email address">
+                                </div>
+                                <div class="col-lg-3">
+                                    <button type="submit" class="btn subscribe-btn mb-3">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-3 text-center text-md-start">
+                    <a href="index.html"><img class="logo" src="images/footer-logo.png" alt="AMZ"></a>
+                    <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                </div>
+                <div class="col-md-9 mt-3 mt-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Company</div>
+                            <div><a href="index.html">Home</a></div>
+                            <div><a href="categories.html">Categories</a></div>
+                            <div><a href="about.html">About</a></div>
+                            <div><a href="contact.html">Contact</a></div>
+                            <div><a href="Brands.html">Brands</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Important Links</div>
+                            <div><a href="#">Important Links</a></div>
+                            <div><a href="#">Store Location</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">Customer Service</div>
+                            <div><a href="#">Help Center</a></div>
+                            <div><a href="categories.html">Brands</a></div>
+                            <div><a href="about.html">Contacts</a></div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="title">User Area</div>
+                            <div><a href="index.html">Login</a></div>
+                            <div><a href="categories.html">Register</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex align-items-center justify-content-center gap-3 mb-3">
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="icon-holder">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <div class="line mb-3"></div>
+            <div class="copy-right">
+                <div class="text-center">
+                    Copyright © 2023 AMZ Tools Egypt, Developed By <a href="www.innovationscope.com">Innovation
+                        Scope</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
