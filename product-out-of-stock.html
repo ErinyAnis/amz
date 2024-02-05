@@ -245,9 +245,9 @@
                 </nav>
                 <div class="row mt-5">
                     <!-- product-slider -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="flexslider">
-                            <div class="col-md-12 col-xs-12 text-center mainImage">
+                            <div class="col-md-12 col-xs-12 text-center mainImage mb-3">
                                 <img id="img_01" src="images/shopping-cart-img.png" alt="product title" />
                             </div>
                             <div class="col-md-12 col-xs-12">
@@ -256,47 +256,47 @@
                                         <div class="item">
                                             <a href="#" data-image="images/shopping-cart-img.png"
                                                 data-zoom-image="images/shopping-cart-img.png">
-                                                <img id="img_01" src="images/shopping-cart-img.png"
+                                                <img class="secondary-img" src="images/shopping-cart-img.png"
                                                     alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/sub-cat-1.png"
                                                 data-zoom-image="images/sub-cat-1.png">
-                                                <img id="img_01" src="images/sub-cat-1.png" alt="product title" />
+                                                <img class="secondary-img" src="images/sub-cat-1.png" alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/sub-cat-2.png"
                                                 data-zoom-image="images/sub-cat-2.png">
-                                                <img id="img_01" src="images/sub-cat-2.png" alt="product title" />
+                                                <img class="secondary-img" src="images/sub-cat-2.png" alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/shopping-cart-img.png"
                                                 data-zoom-image="images/shopping-cart-img.png">
-                                                <img id="img_01" src="images/shopping-cart-img.png"
+                                                <img class="secondary-img" src="images/shopping-cart-img.png"
                                                     alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/shopping-cart-img.png"
                                                 data-zoom-image="images/shopping-cart-img.png">
-                                                <img id="img_01" src="images/shopping-cart-img.png"
+                                                <img class="secondary-img" src="images/shopping-cart-img.png"
                                                     alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/shopping-cart-img.png"
                                                 data-zoom-image="images/shopping-cart-img.png">
-                                                <img id="img_01" src="images/shopping-cart-img.png"
+                                                <img class="secondary-img" src="images/shopping-cart-img.png"
                                                     alt="product title" />
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="#" data-image="images/shopping-cart-img.png"
                                                 data-zoom-image="images/shopping-cart-img.png">
-                                                <img id="img_01" src="images/shopping-cart-img.png"
+                                                <img class="secondary-img" src="images/shopping-cart-img.png"
                                                     alt="product title" />
                                             </a>
                                         </div>
@@ -306,7 +306,7 @@
                         </div>
                     </div>
                     <!-- product-side-info -->
-                    <div class="col-lg-6 ps-0 ps-lg-4">
+                    <div class="col-lg-7">
                         <div class="details">
                             <img src="images/brand-img.png" alt="brand-name">
                             <h2 class="fw-700 mt-3">HIGH PRES SURE WASHER 180 BAR 2800 WATT</h2>
@@ -350,7 +350,35 @@
                                     <div class="brand-link gray-middle ms-3">THKTV02P041</div>
                                 </div>
                             </div>
-                            <button class="main-btn mt-3 mb-3">Notify me when it’s available</button>
+                            
+                            <!-- -------------------------------------------------------- -->
+                            <button  type="button" class="main-btn mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Notify me when it’s available</button>
+                            <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                        
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="#">
+                                                <div class="mb-3">
+                                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <input type="email" name="email" class="form-control" placeholder="Email " required>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="main-btn">Notify me when it’s available</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -------------------------------------------------------- -->
                             <div class="share-to d-flex align-items-center gap-3 mt-3">
                                 <h3 class="fw-700">Share to:</h3>
                                 <div class="d-flex gap-2">
@@ -779,7 +807,7 @@
                     return false;
                 });
                 $('.galleryCarousel').owlCarousel({
-                    items: 3,
+                    items: 4,
                     loop: false,
                     responsive: {
                         0: {
@@ -787,11 +815,11 @@
                             nav: false
                         },
                         600: {
-                            items: 3,
+                            items: 4,
                             nav: false
                         },
                         1000: {
-                            items: 3,
+                            items: 4,
                             nav: true,
                             loop: false
                         }

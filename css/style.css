@@ -1315,7 +1315,7 @@ footer .copy-right a:hover {
 }
 
 .product-details .owl-theme .owl-nav {
-  position: static;
+ display: none;
 }
 
 .product-details .owl-theme .owl-nav .owl-prev, .product-details .owl-theme .owl-nav .owl-next {
@@ -1335,17 +1335,18 @@ footer .copy-right a:hover {
   background: var(--red);
 }
 
-.product-details .owl-carousel.owl-drag .owl-item {
-  padding: 0 25px;
+.product-details .owl-carousel.owl-drag .owl-item .secondary-img {
+  max-height: 100px;
+    padding: 5px;
 }
 
 .product-details .flexslider {
   position: relative;
 }
 
-.product-details .details h2 {
-  font-size: 32px;
-  color: var(--gray-900);
+.product-details .owl-carousel .owl-item img {
+  border: 1px solid var(--gray-middle);
+  border-radius: 10px;
 }
 
 .zoomWindow {
@@ -1354,9 +1355,27 @@ footer .copy-right a:hover {
       border: 2px solid var(--gray-high) !important;
 }
 
+.product-details .mainImage img {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  object-fit: contain;
+    min-height: 250px;
+}
+
+@media (max-width: 767px) {
+  .zoomContainer {
+    display: none !important;
+  }
+}
+
 /* --------------------------------------------- */
 
 /* product-details-price and info*/
+.product-details .details h2 {
+  font-size: 32px;
+  color: var(--gray-900);
+}
+
 .product-details .details .total-reviews span {
   color: #b0aeae;
   font-size: 20px;
@@ -1571,7 +1590,6 @@ footer .copy-right a:hover {
   outline: none;
 }
 
-
 @media (max-width: 767px) {
   .nav-tabs li button {
     font-size: 18px;
@@ -1781,6 +1799,18 @@ footer .copy-right a:hover {
   font-size: 20px;
 }
 
+.product-details .modal-dialog .modal-content {
+  padding: 20px;
+}
+
+.product-details .modal-dialog .modal-content input {
+  background-color: var(--gray-light-3);
+  border-color: var(--gray-light);
+}
+.product-details .modal-dialog .modal-header {
+  border: none;
+}
+
 @media (max-width: 992px) {
   .product-details .modal-content {
     margin-bottom: 30px;
@@ -1799,6 +1829,7 @@ footer .copy-right a:hover {
     font-size: 18px;
   }
 }
+
 
 /* end-moadal */
 /* -------------------------------------------- */
