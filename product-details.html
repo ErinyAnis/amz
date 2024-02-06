@@ -340,7 +340,7 @@
                                                 <button>-</button>
                                             </div>
                                             <div class="num counter">
-                                                <span data-stock="5" data-min="1">0</span>
+                                                <span data-stock="5" data-min="1">1</span>
                                             </div>
                                             <div class="icon-btn increment">
                                                 <button>+</button>
@@ -794,7 +794,7 @@
 
             // counter
             $('.decrement').on('click', function () {
-                var qty = $(this).next('counter').children('span').text();
+                var qty = $(this).next('.counter').children('span').text();
                 var min = $(this).next('.counter').children('span').data('min');
                 if (Number(qty) > min) {
                     $(this).next('.counter').children('span').text(Number(qty) - 1);

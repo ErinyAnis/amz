@@ -248,255 +248,258 @@
             </div>
         </section>
         <!-- checkout -->
-    <section class="check-out sec-padding pt-2">
-        <div class="container">
-            <form action="#" method="post" id="checkout">
-                <div class="row">
-                    <div class="col-xl-8">
-                        <div class="login d-flex align-items-center mb-4">
-                            <div class="fw-500">Returning customer?</div>
-                            <a href="login.html" class="red">Click here to login</a>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input addressCheck" type="radio" name="readioButton" id="home"
-                                value="home" checked>
-                            <label class="form-check-label" for="home">
-                                Home
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input addressCheck" type="radio" name="readioButton" id="office"
-                                value="office">
-                            <label class="form-check-label" for="office">
-                                Office
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input addressCheck add-new" type="radio" name="readioButton"
-                                id="address__new" value="add-new-address">
-                            <label class="form-check-label" for="address__new">
-                                Add new address
-                            </label>
-                        </div>
-                        <div class="form-box mt-4 hidden" id="add-new-address">
-                            <h4 class="red fw-700 mb-4">Shipping details</h4>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="mb-4">
-                                        <label for="fName" class="form-label">First name*</label>
-                                        <input type="text" class="form-control" name="fName" id="fName"
-                                            placeholder="First name">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="phone" class="form-label">Phone Number *</label>
-                                        <input type="number" class="form-control" name="phone" id="phone"
-                                            placeholder="Enter phone number">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="mb-4">
-                                        <label for="lName" class="form-label">Last Name *</label>
-                                        <input type="text" class="form-control" name="lName" id="lName"
-                                            placeholder="Enter last name">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="email" class="form-label">E-Mail</label>
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            aria-describedby="emailHelp" placeholder="Enter your mail">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-4">
-                                <label for="address" class="form-label">Address type ( Home - Work ....)
-                                    *</label>
-                                <input type="password" class="form-control" name="addressType" id="address"
-                                    placeholder="Please enter address type">
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="mb-4">
-                                        <label for="city" class="form-label">City *</label>
-                                        <input type="text" class="form-control" name="city" id="city"
-                                            placeholder="City">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="buildingNum" class="form-label">Building number</label>
-                                        <input type="number" class="form-control" name="buildingNum" id="buildingNum"
-                                            placeholder="Building number">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="apartNum" class="form-label">Apartment Number</label>
-                                        <input type="number" class="form-control" name="apartNum" id="apartNum"
-                                            placeholder="Enter apartment number">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="mb-4">
-                                        <label for="stName" class="form-label">Street Name</label>
-                                        <input type="text" class="form-control" name="stName" id="stName"
-                                            placeholder="Enter street name">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="floor" class="form-label">Floor</label>
-                                        <input type="number" class="form-control" name="floor" id="floor"
-                                            placeholder="Enter floor number">
-                                    </div>
-                                    <div class="mb-4">
-                                        <label for="landmark" class="form-label">Landmark</label>
-                                        <input type="text" class="form-control" name="landmark" id="landmark"
-                                            placeholder="Enter landmark">
-                                    </div>
-                                </div>
+        <section class="check-out sec-padding pt-2">
+            <div class="container">
+                <form action="#" method="post" id="checkout">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="login d-flex align-items-center mb-4">
+                                <div class="fw-500">Returning customer?</div>
+                                <a href="login.html" class="red">Click here to login</a>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="createAcc">
-                                <label class="form-check-label" for="createAcc">Create an account?</label>
+                                <input class="form-check-input addressCheck" type="radio" name="readioButton" id="home"
+                                    value="home" checked>
+                                <label class="form-check-label" for="home">
+                                    Home
+                                </label>
                             </div>
-                        </div>
-                        <div class="form-box mt-4">
-                            <h4 class="red fw-700 mb-4">Additional Information</h4>
-                            <div class="mb-3">
-                                <label for="addInfo" class="form-label">Order notes
-                                    (Optional)</label>
-                                <textarea class="form-control" id="addInfo" name="addInfo" rows="3"
-                                    placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                            <div class="form-check">
+                                <input class="form-check-input addressCheck" type="radio" name="readioButton"
+                                    id="office" value="office">
+                                <label class="form-check-label" for="office">
+                                    Office
+                                </label>
                             </div>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input addressCheck add-new" type="radio" name="readioButton"
+                                    id="address__new" value="add-new-address">
+                                <label class="form-check-label" for="address__new">
+                                    Add new address
+                                </label>
+                            </div>
+                            <div class="form-box mt-4 hidden" id="add-new-address">
+                                <h4 class="red fw-700 mb-4">Shipping details</h4>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="fName" class="form-label">First name *</label>
+                                            <input type="text" class="form-control" name="fName" id="fName"
+                                                placeholder="First name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="number" class="form-control" name="phone" id="phone"
+                                                placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="lName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" name="lName" id="lName"
+                                                placeholder="Enter last name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="email" class="form-label">E-Mail</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                aria-describedby="emailHelp" placeholder="Enter your mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="address" class="form-label">Address type ( Home - Work ....)
+                                        *</label>
+                                    <input type="password" class="form-control" name="addressType" id="address"
+                                        placeholder="Please enter address type">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="city" class="form-label">City *</label>
+                                            <input type="text" class="form-control" name="city" id="city"
+                                                placeholder="City">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="buildingNum" class="form-label">Building number</label>
+                                            <input type="number" class="form-control" name="buildingNum"
+                                                id="buildingNum" placeholder="Building number">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="apartNum" class="form-label">Apartment Number</label>
+                                            <input type="number" class="form-control" name="apartNum" id="apartNum"
+                                                placeholder="Enter apartment number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="stName" class="form-label">Street Name</label>
+                                            <input type="text" class="form-control" name="stName" id="stName"
+                                                placeholder="Enter street name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="floor" class="form-label">Floor</label>
+                                            <input type="number" class="form-control" name="floor" id="floor"
+                                                placeholder="Enter floor number">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="landmark" class="form-label">Landmark</label>
+                                            <input type="text" class="form-control" name="landmark" id="landmark"
+                                                placeholder="Enter landmark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="createAcc">
+                                    <label class="form-check-label" for="createAcc">Create an account?</label>
+                                </div>
+                            </div>
+                            <div class="form-box mt-4">
+                                <h4 class="red fw-700 mb-4">Additional Information</h4>
+                                <div class="mb-3">
+                                    <label for="addInfo" class="form-label">Order notes
+                                        (Optional)</label>
+                                    <textarea class="form-control" id="addInfo" name="addInfo" rows="3"
+                                        placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                </div>
+                            </div>
 
-                        <div class="form-box mt-4 pt-5 mb-4">
-                            <div class="payment-method">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6">
-                                        <div class="payment-container p-4">
-                                            <div class="form-check">
-                                                <div class="d-flex align-items-center gap-3">
-                                                    <input class="form-check-input" type="radio" name="payment"
-                                                        id="visa" value="visa" checked>
-                                                    <div>
+                            <div class="form-box mt-4 pt-5 mb-4">
+                                <div class="payment-method">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="payment-container p-4">
+                                                <div class="form-check">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <input class="form-check-input" type="radio" name="payment"
+                                                            id="visa" value="visa" checked>
                                                         <div>
-                                                            <label class="form-check-label" for="visa">
-                                                                Pay by Credit Card
-                                                            </label>
-                                                        </div>
-                                                        <div>
-                                                            <label class="form-check-label" for="visa">
-                                                                <img src="images/Cards.png" alt="visa">
-                                                            </label>
+                                                            <div>
+                                                                <label class="form-check-label" for="visa">
+                                                                    Pay by Credit Card
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="form-check-label" for="visa">
+                                                                    <img src="images/Cards.png" alt="visa">
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="payment-container mb-3 mt-3 mt-md-0">
-                                            <div class="options">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="payment" id="am"
-                                                        value="aman">
-                                                    <label class="form-check-label" for="opt2">
-                                                        Aman
-                                                    </label>
+                                        <div class="col-md-6">
+                                            <div class="payment-container mb-3 mt-3 mt-md-0">
+                                                <div class="options">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="payment"
+                                                            id="am" value="aman">
+                                                        <label class="form-check-label" for="opt2">
+                                                            Aman
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="payment-container">
+                                                <div class="options">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="payment"
+                                                            id="opt3" value="mobile wallets">
+                                                        <label class="form-check-label" for="opt3">
+                                                            Mobile Wallets
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="payment-container">
-                                            <div class="options">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="payment"
-                                                        id="opt3" value="mobile wallets">
-                                                    <label class="form-check-label" for="opt3">
-                                                        Mobile Wallets
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-check mt-4">
-                                    <input class="form-check-input pt-2" type="checkbox" id="accept" value="">
-                                    <label class="form-check-label" for="accept">
-                                        I’ve read and accept the <a href="#" class="red">terms & conditions*</a>
-                                    </label>
+                                    <div class="form-check mt-4">
+                                        <input class="form-check-input pt-2" type="checkbox" id="accept" value="">
+                                        <label class="form-check-label" for="accept">
+                                            I’ve read and accept the <a href="#" class="red">terms & conditions*</a>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 position-relative">
-                        <div class="fixed-side-cart">
-                            <div class="form-box white-bg">
-                                <div class="shopping-cart">
-                                    <h4 class="red fw-700 mb-4">Shopping Cart</h4>
-                                    <div class="d-flex align-items-center item-container">
-                                        <div class="img-container"><img src="images/product-1.png" alt="product-title">
+                        <div class="col-xl-4 position-relative">
+                            <div class="fixed-side-cart">
+                                <div class="form-box white-bg">
+                                    <div class="shopping-cart">
+                                        <h4 class="red fw-700 mb-4">Shopping Cart</h4>
+                                        <div class="d-flex align-items-center item-container">
+                                            <div class="img-container"><img src="images/product-1.png"
+                                                    alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                         </div>
-                                        <div class="title fw-500 ms-3">
-                                            <span class="qty red">2X</span>
-                                            <div class="gray-high d-inline">High Pressure Washer
-                                                180 BAR 2800 WATT</div>
-                                            <div class="price basic">8900 EGP</div>
+                                        <div class="d-flex align-items-center item-container">
+                                            <div class="img-container"><img src="images/product-1.png"
+                                                    alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                         </div>
-                                        <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                                    </div>
-                                    <div class="d-flex align-items-center item-container">
-                                        <div class="img-container"><img src="images/product-1.png" alt="product-title">
-                                        </div>
-                                        <div class="title fw-500 ms-3">
-                                            <span class="qty red">2X</span>
-                                            <div class="gray-high d-inline">High Pressure Washer
-                                                180 BAR 2800 WATT</div>
-                                            <div class="price basic">8900 EGP</div>
-                                        </div>
-                                        <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                                    </div>
-                                    <div class="d-flex align-items-center item-container">
-                                        <div class="img-container"><img src="images/product-1.png" alt="product-title">
-                                        </div>
-                                        <div class="title fw-500 ms-3">
-                                            <span class="qty red">2X</span>
-                                            <div class="gray-high d-inline">High Pressure Washer
-                                                180 BAR 2800 WATT</div>
-                                            <div class="price basic">8900 EGP</div>
-                                        </div>
-                                        <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                                    </div>
-                                </div>
-                                <div class="data-holder mt-5">
-                                    <div class="d-flex justify-content-between fw-500">
-                                        <div>
-                                            <div class="title gray-high mb-3">Sub Total</div>
-                                            <div class="title gray-high mb-3">Shipping Fees</div>
-                                            <div class="title gray-high mb-3">Discount</div>
-                                        </div>
-                                        <div>
-                                            <div class="mb-3 price">8,900 EGP</div>
-                                            <div class="mb-3 price">150 EGP</div>
-                                            <div class="red mb-3 price">(-150 EGP)</div>
+                                        <div class="d-flex align-items-center item-container">
+                                            <div class="img-container"><img src="images/product-1.png"
+                                                    alt="product-title">
+                                            </div>
+                                            <div class="title fw-500 ms-3">
+                                                <span class="qty red">2X</span>
+                                                <div class="gray-high d-inline">High Pressure Washer
+                                                    180 BAR 2800 WATT</div>
+                                                <div class="price basic">8900 EGP</div>
+                                            </div>
+                                            <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                         </div>
                                     </div>
-                                    <!-- under-line -->
-                                    <div class="pt-3 pb-2">
-                                        <div class="line"></div>
-                                    </div>
+                                    <div class="data-holder mt-5">
+                                        <div class="d-flex justify-content-between fw-500">
+                                            <div>
+                                                <div class="title gray-high mb-3">Sub Total</div>
+                                                <div class="title gray-high mb-3">Shipping Fees</div>
+                                                <div class="title gray-high mb-3">Discount</div>
+                                            </div>
+                                            <div>
+                                                <div class="mb-3 price">8,900 EGP</div>
+                                                <div class="mb-3 price">150 EGP</div>
+                                                <div class="red mb-3 price">(-150 EGP)</div>
+                                            </div>
+                                        </div>
+                                        <!-- under-line -->
+                                        <div class="pt-3 pb-2">
+                                            <div class="line"></div>
+                                        </div>
 
-                                    <div class="d-flex justify-content-between total">
-                                        <div>
-                                            <div class="total-label red fw-700 mb-3">Total</div>
+                                        <div class="d-flex justify-content-between total">
+                                            <div>
+                                                <div class="total-label red fw-700 mb-3">Total</div>
+                                            </div>
+                                            <div>
+                                                <div class="total-num red fw-700 mb-3">9,050 EGP</div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <div class="total-num red fw-700 mb-3">9,050 EGP</div>
+                                        <div class="mt-4 text-center check-out">
+                                            <button type="submit" class="main-btn w-100 d-block">Checkout</button>
                                         </div>
-                                    </div>
-                                    <div class="mt-4 text-center check-out">
-                                        <button type="submit" class="main-btn w-100 d-block">Checkout</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-    </section>
+                </form>
+        </section>
 
 
         <!-- subscribe form -->
@@ -612,7 +615,6 @@
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="js/index.js"></script>
 
-
     <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -652,13 +654,13 @@
                         required: true,
                         minlength: 2,
                     },
+                    email: {
+                        required: true,
+                        minlength: 2,
+                    },
                     phone: {
                         required: true,
                         number: true,
-                    },
-                    lastName: {
-                        required: true,
-                        minlength: 2,
                     },
                     addressType: {
                         required: true,
@@ -672,15 +674,14 @@
                         required: "please enter your first name",
                         minlength: "first name at least 2 characters"
                     },
+                    lName: {
+                        required: "please enter your last name",
+                        minlength: "first name at least 2 characters"
+                    },
 
                     phone: {
                         required: "please enter your phone number",
                         number: "phone must be a number",
-                    },
-
-                    lastName: {
-                        required: "please enter your last name",
-                        minlength: "last name at least 2 characters"
                     },
                     addressType: {
                         required: "please enter your address type",

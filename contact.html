@@ -258,7 +258,7 @@
                         <div class="d-flex align-items-center gap-2 contact-holder">
                             <i class="fa-solid fa-location-dot"></i>
                             <div class="address">99 A - El Gomhoriya Street,
-                            Cairo, Egypt</div>
+                                Cairo, Egypt</div>
                         </div>
                     </div>
                     <div class="col-lg-8 offset-lg-4">
@@ -267,32 +267,37 @@
                                 <h3 class="red fw-700">Leave a message</h3>
                                 <p class="fw-500">Please Don’t Hesitate To Send Us A Message</p>
                             </div>
-                            <form action="#" class="main-form">
+                            <form action="#" class="main-form" id="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="mb-4">
                                             <label for="name" class="form-label">Name*</label>
-                                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder="Enter your name" required>
                                         </div>
                                         <div class="mb-4">
-                                            <label for="phone" name="phone" class="form-label">Phone Number*</label>
-                                            <input type="number" class="form-control" id="phone" placeholder="Enter phone number" required>
+                                            <label for="phone" class="form-label">Phone Number*</label>
+                                            <input type="number" name="phone"  class="form-control" id="phone"
+                                                placeholder="Enter phone number" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-4">
                                             <label for="email" class="form-label">Email*</label>
-                                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your mail" required>
+                                            <input type="email" name="email" class="form-control" id="email"
+                                                placeholder="Enter your mail" required>
                                         </div>
                                         <div class="mb-4">
                                             <label for="subject" class="form-label">Subject</label>
-                                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" name="subject" class="form-control" id="subject"
+                                                placeholder="Subject">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="mb-4">
                                             <label for="review" class="form-label">Review*</label>
-                                            <input type="text" name="review" class="form-control" id="review" placeholder="Enter your review" required>
+                                            <input type="text" name="review" class="form-control" id="review"
+                                                placeholder="Enter your review" required>
                                         </div>
                                     </div>
                                     <div class="text-center mt-3">
@@ -402,6 +407,53 @@
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="js/index.js"></script>
+
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#contact-form").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        number: true,
+                    },
+                    review: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    name: {
+                        required: "please enter your name",
+                        minlength: "name must be at least 2 characters"
+                    },
+                    email: {
+                        required: "please enter your email address",
+                        email: "email address must be in email format"
+                    },
+                    phone: {
+                        required: "please enter your phone number",
+                        number: "phone must be a number",
+                    },
+                    review: {
+                        required: "please enter your review",
+                    },
+                },
+
+                submitHandler: function (form) {
+
+                    $(form).submit();
+                }
+            });
+        });
+    </script>
 
 </body>
 
